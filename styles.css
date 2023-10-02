@@ -1,0 +1,148 @@
+/* Reset some default styles */
+body,
+h1,
+p,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('img2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+/* Container for the quiz */
+.quiz-container {
+    max-width: 600px;
+    margin: 8rem auto;
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f45e21, #23d5ab);
+    background-size: 300% 300%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: color 12s ease-in-out infinite;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/* Quiz title style */
+h1 {
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Question text style */
+.question {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+/* Answer buttons style */
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 14em;
+    margin: 0 auto;
+    /* Center horizontally */
+    transition: background-color 0.3s;
+}
+
+.answer:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    /* Add a slight hover effect */
+}
+
+/* Feedback text style */
+.feedback {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #c21919;
+    /* Red color for incorrect feedback */
+}
+
+.correct {
+    background-color: #2ecc71 !important;
+    /* Green for correct answers */
+}
+
+.incorrect {
+    background-color: #ec0000 !important;
+    /* Red for incorrect answers */
+}
+
+/* Next button style */
+#next-button,
+#restart-button,
+#submitButton {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#next-button:hover,
+#restart-button:hover,
+#submitButton:hover {
+    background-color: #27ae60;
+}
+
+/* Score display style */
+#score {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Timer display style */
+.timer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*selected answer style*/
+.selected {
+    transform: scale(1.2);
+    /* Increase the size by 10% */
+    color: white;
+    /* White text color */
+    background-color: rgb(68, 68, 231);
+}

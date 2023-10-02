@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Page</title>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>Mind Benders: A Quiz for the Curious!</h1>
+        <div class="question">
+            <p id="question-text"></p>
+        </div>
+        <div class="answers">
+            <button class="answer" id="answer0">Option 1</button>
+            <button class="answer" id="answer1">Option 2</button>
+            <button class="answer" id="answer2">Option 3</button>
+            <button class="answer" id="answer3">Option 4</button>
+        </div>
+        <div class="feedback" id="feedback"></div>
+        <div class="timer" id="timer"></div>
+        <button id="submitButton" onclick="submit()">submit</button>
+        <button id="next-button" onclick="nextQuestion()">Next</button>
+        <p id="score" style="display: none;">Score: 0</p>
+        <button id="restart-button" style="display: none;" onclick="restartQuiz()">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
