@@ -7,6 +7,7 @@ This quiz website is designed to be user-friendly and straightforward. Follow th
 
 # Starting a Quiz
 Open the Website: Begin by opening the quiz website in your web browser.
+
 Homepage: You will land on the homepage, which may display a title, a brief description, and a "Start Quiz" button.
 Starting the Quiz: To start a quiz, click the "Start Quiz" button. This will take you to the first question of the quiz.
 
